@@ -4,4 +4,4 @@ Collection of my custom alerts. Defined here since examples are scarce on the in
 
 ## Included alerts 
 
-![Alt text](https://raw.githubusercontent.com/zimmertr/librenms_example_alerts/master/alerts.png "Alerts in LibreNMS")
+![Alt text](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alerts.png "Alerts in LibreNMS")

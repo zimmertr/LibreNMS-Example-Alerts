@@ -55,4 +55,4 @@ Uptime: %uptime_long
 
 _The following is a screenshot of my phone displaying several push notifications using the above rules and templates in conjunction with Pusbullet as my transport endpoint._
 
-![](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alert_example.png | width=100)
+![](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alert_example.png?s=100)

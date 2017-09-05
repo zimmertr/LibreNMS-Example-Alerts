@@ -22,7 +22,7 @@ _This table holds all of my example LibreNMS alerts._
 | 11 | Host has been rebooted. | %devices.uptime < "300" && %macros.device = "1" | warning | Max: 1 Delay: 300 Interval: 300 |
 | 12 | Poller is taking longer than expected. | %pollers.time_taken >= "250" | critical | Max: -1 Delay: 300 Interval: 300 |
 | 13 | A network port has gone down. | %ports.ifOperStatus = "down" && %ports.ifOperStatus_prev = "up" && %macros.device_up = "1" | warning | Max: -1 Delay: 300 Interval: 300 | 
-| 14 | Interface errors rate is abnormally high. | %ports.ifOutErrors_rate >= "100" | %ports.ifInErrors_rate >= "100" | critical | Max: -1 Delay: 300 Interval: 300 | 
+| 14 | Interface errors rate is abnormally high. | %ports.ifOutErrors_rate >= "100" | critical | Max: -1 Delay: 300 Interval: 300 | 
 | 15 | Host has entered a Warning state. | %services.service_status = "1" | warning | Max: -1 Delay: 300 Interval: 300 | 
 | 16 | Host has entered a Critical state. | %services.service_status = "2" | critical | Max: -1 Delay: 300 Interval: 300 | 
 | 17 | FQDN does not include the domain name. | %devices.sysName !~ "@sol.milkyway" | warning | Max: -1 Delay: 300 Interval: 300 |

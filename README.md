@@ -2,9 +2,6 @@
 
 Collection of my custom alerts. Defined here since examples are scarce on the internet and I did not want to recreate them.
 
-## Alert Example 
-
-![Alt text](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alert_example.png "Alerts in LibeNMS")
 
 ## Included alerts 
 
@@ -16,4 +13,18 @@ Collection of my custom alerts. Defined here since examples are scarce on the in
 
 ## Alert Template
 
-![Alt text](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alert_template.png "Alert template in LibeNMS")
+**Alert Title:** LibreNMS (%hostname) - NEW ALERT  
+**Recovery Title:** LibreNMS (%hostname) - CANCELLATION  
+**Alert Body**:  
+```
+{if %state == 0}Duration: %elapsed{else}Severity: %severity{/if}
+
+Rule: {if %name}%name{else}%rule{/if}
+---------------------------
+Timestamp: %timestamp
+Uptime: %uptime_long
+```
+
+## Alert Example 
+
+![Alt text](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alert_example.png "Alerts in LibeNMS")

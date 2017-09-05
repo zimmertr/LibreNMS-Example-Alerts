@@ -51,6 +51,18 @@ Timestamp: %timestamp
 Uptime: %uptime_long
 ```
 
+
+## TODO
+
+_At this time several of the above rules are either not working or flawed. I have not done any troubleshooting, but simply disabled the rules in favor of resolving the issue at a later time._  
+
+```
+ - Host has more than 3 VCPUs: This rule does not work effectively as it spams for physical devices > 3 CPU cores as well. (My hypervisor, workstation, & laptop)  
+ - Host has less than 1GB of allocated memory: This rule is ineffective as well as it mis-diagnoses physical devices. (Perhaps they return null for vminfo which triggers a false positive?)  
+ - FQDN does not include the domain name: For some reason this rule is also not functional. (Every device that is monitored returns a failure for this check during each interval cycle.)  
+```
+
+
 ## Alert Example 
 
 _The following is a screenshot of my phone displaying several push notifications using the above rules and templates in conjunction with Pusbullet as my transport endpoint._

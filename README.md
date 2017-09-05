@@ -60,6 +60,7 @@ _At this time several of the above rules are either not working or flawed. I hav
  - Host has more than 3 VCPUs: This rule does not work effectively as it spams for physical devices > 3 CPU cores as well. (My hypervisor, workstation, & laptop)  
  - Host has less than 1GB of allocated memory: This rule is ineffective as well as it mis-diagnoses physical devices. (Perhaps they return null for vminfo which triggers a false positive?)  
  - FQDN does not include the domain name: For some reason this rule is also not functional. (Every device that is monitored returns a failure for this check during each interval cycle.)  
+ - Host has been down for 5 minutes: Times are not always accurate. Also delivers false positives for reboots occasionally. For example, rebooted my laptop (~45 seconds) and received an alert saying it had been down for 5 minutes.
 ```
 
 

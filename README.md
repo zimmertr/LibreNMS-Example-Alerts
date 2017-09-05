@@ -4,7 +4,7 @@ Collection of my custom alerts. Defined here since examples are scarce on the in
 
 ## Alert Example 
 
-![Alt text](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alerts.png "Alerts in LibeNMS")
+![Alt text](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alert_example.png "Alerts in LibeNMS")
 
 ## Included alerts 
 

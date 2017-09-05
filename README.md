@@ -5,7 +5,7 @@ LibreNMS is not very plentiful with their example alerts. It took me a significa
 
 ## Included alerts 
 
-This table holds all of my example LibreNMS alerts.
+__This table holds all of my example LibreNMS alerts.__
 
 | # | Name | Rule | Severity | Extra |
 | - | ---- | ---- | -------- | ----- |
@@ -37,11 +37,11 @@ This table holds all of my example LibreNMS alerts.
 
 ## Alert Template
 
-LibreNMS allows you to customize the alert message that is sent to your transport endpoint. The following is my default message. I did not bother with additional templates.
+__LibreNMS allows you to customize the alert message that is sent to your transport endpoint. The following is my default message. I did not bother with additional templates.__
 
-**Alert Title:** LibreNMS (%hostname) - NEW ALERT  
-**Recovery Title:** LibreNMS (%hostname) - CANCELLATION  
-**Alert Body**:  
+Alert Title: `LibreNMS (%hostname) - NEW ALERT`    
+Recovery Title: `LibreNMS (%hostname) - CANCELLATION`  
+Alert Body:  
 ```
 {if %state == 0}Duration: %elapsed{else}Severity: %severity{/if}
 

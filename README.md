@@ -1,9 +1,11 @@
 # LibreNMS Example Alerts
 
-Collection of my custom alerts. Defined here since examples are scarce on the internet and I did not want to recreate them.
+LibreNMS is not very plentiful with their example alerts. It took me a significant amount of time to come up with the following alerts so I thought I would create a repository to retain them in the event that I need to rebuild my LibreNMS server in the future. Or, of course, so others could see my examples as well.
 
 
 ## Included alerts 
+
+This table holds all of my example LibreNMS alerts.
 
 | # | Name | Rule | Severity | Extra |
 | - | ---- | ---- | -------- | ----- |
@@ -35,18 +37,22 @@ Collection of my custom alerts. Defined here since examples are scarce on the in
 
 ## Alert Template
 
+LibreNMS allows you to customize the alert message that is sent to your transport endpoint. The following is my default message. I did not bother with additional templates.
+
 **Alert Title:** LibreNMS (%hostname) - NEW ALERT  
 **Recovery Title:** LibreNMS (%hostname) - CANCELLATION  
 **Alert Body**:  
 ```
 {if %state == 0}Duration: %elapsed{else}Severity: %severity{/if}
 
-Rule: {if %name}%name{else}%rule{/if}
+{if %name}%name{else}%rule{/if}
 ---------------------------
 Timestamp: %timestamp
 Uptime: %uptime_long
 ```
 
 ## Alert Example 
+
+The following is a screenshot of my phone displaying several push notifications using the above rules and templates in conjunction with Pusbullet as my transport endpoint.
 
 ![Alt text](https://raw.githubusercontent.com/zimmertr/Librenms-Example-Alerts/master/alert_example.png "Alerts in LibeNMS")
